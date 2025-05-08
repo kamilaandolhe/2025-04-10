@@ -5,39 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfólio de Davi Sovinski</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio de Kamila Fronstak Andolhe</title>
 </head>
 <body>
     <header class="container text-center py-5">
         <div class="d-flex justify-content-center">
-            <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 150px; height: 150px;">
-                <i class="bi bi-person-fill text-light" style="font-size: 3rem;"></i>
+            <div class="profile-pic rounded-circle d-flex align-items-center justify-content-center">
+                <i class="bi bi-person-fill"></i>
             </div>
         </div>
         <p class="lead mt-3">Olá, eu sou</p>
-        <h1>Davi Sovinski</h1>
-        <p class="mt-4">Tenho 15 anos e atualmente estou cursando o segundo ano do Ensino Médio. Sou um entusiasta da tecnologia e estou me aprofundando no mundo da programação, especialmente em desenvolvimento web. Meu objetivo é aprender cada vez mais sobre HTML, CSS e JavaScript para criar projetos inovadores e funcionais.</p>
-        <p class="mt-3">Minhas habilidades</p>
+        <h1 class="name">Kamila Fronstak Andolhe</h1>
+        <p class="mt-4 bio">Tenho 20 anos e sou estudante de Design e Tecnologia. Adoro criar soluções criativas que unem estética e funcionalidade. Meu objetivo é desenvolver projetos que sejam bonitos e intuitivos.</p>
+        <p class="mt-3 skills-title">Minhas habilidades</p>
         <div class="d-flex justify-content-center gap-2 flex-wrap">
-            <p class="badge bg-secondary">HTML</p>
-            <p class="badge bg-secondary">CSS</p>
-            <p class="badge bg-secondary">JavaScript</p>
-            <p class="badge bg-secondary">Bootstrap</p>
+            <span class="badge skill-badge">UI/UX Design</span>
+            <span class="badge skill-badge">HTML/CSS</span>
+            <span class="badge skill-badge">Illustrator</span>
+            <span class="badge skill-badge">Photoshop</span>
+            <span class="badge skill-badge">Figma</span>
         </div>
     </header>
 
     <main class="container mt-5">
         <!-- Navegação por abas -->
-        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="true">Projetos</button>
+                <button class="nav-link active" id="projects-tab" data-bs-toggle="pill" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="true">
+                    <i class="bi bi-folder-fill me-2"></i>Projetos
+                </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">Sobre Mim</button>
+                <button class="nav-link" id="about-tab" data-bs-toggle="pill" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">
+                    <i class="bi bi-person-fill me-2"></i>Sobre Mim
+                </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contato</button>
+                <button class="nav-link" id="contact-tab" data-bs-toggle="pill" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                    <i class="bi bi-envelope-fill me-2"></i>Contato
+                </button>
             </li>
         </ul>
 
@@ -45,46 +52,52 @@
         <div class="tab-content py-4" id="myTabContent">
             <!-- Aba de Projetos -->
             <div class="tab-pane fade show active" id="projects" role="tabpanel" aria-labelledby="projects-tab">
-                <h2 class="text-center mb-5">Meus projetos</h2>
+                <h2 class="text-center mb-5 section-title">Meus projetos</h2>
                 <div class="row">
                     <!-- Projeto 1 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100">
+                        <div class="card h-100 project-card">
                             <div class="card-body d-flex flex-column">
-                                <div class="bg-light p-4 text-center mb-3">
-                                    <i class="bi bi-file-earmark-code" style="font-size: 2rem;"></i>
+                                <div class="project-icon">
+                                    <i class="bi bi-palette-fill"></i>
                                 </div>
-                                <h5 class="card-title">Site Pessoal</h5>
-                                <p class="card-text flex-grow-1">Meu primeiro projeto de desenvolvimento web, onde criei um site pessoal para apresentar meus interesses e habilidades. Utilizei HTML e CSS básico para estruturar e estilizar a página.</p>
-                                <button type="button" class="btn btn-link align-self-start" data-bs-toggle="modal" data-bs-target="#modal1">Detalhes do projeto</button>
+                                <h5 class="card-title">Identidade Visual</h5>
+                                <p class="card-text">Criação de identidade visual para uma marca de cosméticos naturais, incluindo logo, paleta de cores e aplicações.</p>
+                                <button type="button" class="btn project-btn align-self-start" data-bs-toggle="modal" data-bs-target="#modal1">
+                                    Ver detalhes
+                                </button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Projeto 2 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100">
+                        <div class="card h-100 project-card">
                             <div class="card-body d-flex flex-column">
-                                <div class="bg-light p-4 text-center mb-3">
-                                    <i class="bi bi-calculator" style="font-size: 2rem;"></i>
+                                <div class="project-icon">
+                                    <i class="bi bi-phone-fill"></i>
                                 </div>
-                                <h5 class="card-title">Calculadora Interativa</h5>
-                                <p class="card-text flex-grow-1">Uma calculadora funcional desenvolvida com JavaScript que realiza operações matemáticas básicas. Este projeto me ajudou a entender melhor a lógica de programação e manipulação do DOM.</p>
-                                <button type="button" class="btn btn-link align-self-start" data-bs-toggle="modal" data-bs-target="#modal2">Detalhes do projeto</button>
+                                <h5 class="card-title">App Mobile</h5>
+                                <p class="card-text">Design de interface para um aplicativo de organização pessoal, com foco em usabilidade e experiência do usuário.</p>
+                                <button type="button" class="btn project-btn align-self-start" data-bs-toggle="modal" data-bs-target="#modal2">
+                                    Ver detalhes
+                                </button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Projeto 3 -->
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100">
+                        <div class="card h-100 project-card">
                             <div class="card-body d-flex flex-column">
-                                <div class="bg-light p-4 text-center mb-3">
-                                    <i class="bi bi-journal-text" style="font-size: 2rem;"></i>
+                                <div class="project-icon">
+                                    <i class="bi bi-shop-window"></i>
                                 </div>
-                                <h5 class="card-title">Blog de Tecnologia</h5>
-                                <p class="card-text flex-grow-1">Um blog simples sobre tecnologia e programação, desenvolvido como exercício para aprender sobre estrutura de páginas e layout responsivo usando Bootstrap.</p>
-                                <button type="button" class="btn btn-link align-self-start" data-bs-toggle="modal" data-bs-target="#modal3">Detalhes do projeto</button>
+                                <h5 class="card-title">Landing Page</h5>
+                                <p class="card-text">Desenvolvimento de landing page responsiva para uma loja de artesanato, com design clean e chamativas visuais.</p>
+                                <button type="button" class="btn project-btn align-self-start" data-bs-toggle="modal" data-bs-target="#modal3">
+                                    Ver detalhes
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -95,21 +108,36 @@
             <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-center mb-4">Sobre Mim</h2>
-                        <div class="card">
+                        <h2 class="text-center mb-4 section-title">Sobre Mim</h2>
+                        <div class="card about-card">
                             <div class="card-body">
-                                <h5 class="card-title">Minha Jornada</h5>
-                                <p class="card-text">Desde criança sempre fui fascinado por tecnologia. Aos 13 anos, tive meu primeiro contato com programação através de um curso básico de HTML e CSS, e desde então não parei mais de aprender.</p>
-                                
-                                <h5 class="card-title mt-4">Educação</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Ensino Fundamental Completo</li>
-                                    <li class="list-group-item">Cursando 2º ano do Ensino Médio</li>
-                                    <li class="list-group-item">Cursos online de desenvolvimento web</li>
-                                </ul>
-                                
-                                <h5 class="card-title mt-4">Objetivos</h5>
-                                <p class="card-text">Meu principal objetivo é me tornar um desenvolvedor full-stack, dominando tanto o front-end quanto o back-end. Pretendo ingressar em uma faculdade de Ciência da Computação ou Engenharia de Software após concluir o Ensino Médio.</p>
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <img src="https://placehold.co/200x200/pink/white?text=Kamila" alt="Kamila" class="img-fluid rounded-circle mb-3 about-img">
+                                        <h5>Kamila Fronstak Andolhe</h5>
+                                        <p class="text-muted">Designer & Desenvolvedora</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h5 class="card-title"><i class="bi bi-bookmark-heart-fill me-2"></i>Minha Jornada</h5>
+                                        <p class="card-text">Desde pequena sempre fui apaixonada por arte e design. Aos 16 anos, descobri meu talento para criação visual e desde então venho me especializando em design digital e interfaces.</p>
+                                        
+                                        <h5 class="card-title mt-4"><i class="bi bi-mortarboard-fill me-2"></i>Educação</h5>
+                                        <ul class="list-group list-group-flush about-list">
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check-circle-fill me-2"></i>Graduação em Design Gráfico (cursando)
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check-circle-fill me-2"></i>Curso de UI/UX Design - 120h
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check-circle-fill me-2"></i>Web Design Responsivo - Certificação
+                                            </li>
+                                        </ul>
+                                        
+                                        <h5 class="card-title mt-4"><i class="bi bi-stars me-2"></i>Objetivos</h5>
+                                        <p class="card-text">Quero me tornar uma designer full-stack, capaz de criar desde a identidade visual até a implementação front-end de projetos. Meu sonho é trabalhar criando experiências digitais memoráveis e acessíveis.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -120,38 +148,44 @@
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <h2 class="text-center mb-4">Entre em contato</h2>
-                        <div class="card">
+                        <h2 class="text-center mb-4 section-title">Entre em contato</h2>
+                        <div class="card contact-card">
                             <div class="card-body">
-                                <form>
+                                <form class="contact-form">
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="name" required>
+                                        <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="email" class="form-label">E-mail</label>
-                                        <input type="email" class="form-control" id="email" required>
+                                        <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="message" class="form-label">Mensagem</label>
-                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                        <textarea class="form-control" id="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                                    <button type="submit" class="btn contact-btn">
+                                        <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
+                                    </button>
                                 </form>
                                 
-                                <div class="d-flex justify-content-center gap-4 mt-5">
-                                    <div class="text-center">
-                                        <a href="https://github.com/seu-usuario" class="text-decoration-none">
-                                            <i class="bi bi-github" style="font-size: 1.5rem;"></i>
-                                            <p class="mt-2">GitHub</p>
-                                        </a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a href="mailto:seu-email@exemplo.com" class="text-decoration-none">
-                                            <i class="bi bi-envelope" style="font-size: 1.5rem;"></i>
-                                            <p class="mt-2">E-mail</p>
-                                        </a>
-                                    </div>
+                                <div class="d-flex justify-content-center gap-4 mt-5 contact-links">
+                                    <a href="https://github.com/kamila-design" class="text-decoration-none contact-link">
+                                        <i class="bi bi-github"></i>
+                                        <p>GitHub</p>
+                                    </a>
+                                    <a href="https://linkedin.com/in/kamila-design" class="text-decoration-none contact-link">
+                                        <i class="bi bi-linkedin"></i>
+                                        <p>LinkedIn</p>
+                                    </a>
+                                    <a href="https://dribbble.com/kamila-design" class="text-decoration-none contact-link">
+                                        <i class="bi bi-dribbble"></i>
+                                        <p>Dribbble</p>
+                                    </a>
+                                    <a href="mailto:kamila@exemplo.com" class="text-decoration-none contact-link">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <p>E-mail</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -161,97 +195,102 @@
         </div>
     </main>
 
-    <!-- Modais (mantidos da versão original) -->
+    <!-- Modais -->
     <!-- Modal 1 -->
-    <div class="modal" id="modal1" tabindex="-1">
-        <div class="modal-dialog">
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Site Pessoal</h5>
+                    <h5 class="modal-title"><i class="bi bi-palette-fill me-2"></i>Identidade Visual</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Este foi meu primeiro contato com desenvolvimento web, onde aprendi os fundamentos de HTML e CSS. O projeto consiste em uma página única que apresenta minha biografia, interesses e objetivos pessoais.</p>
-                    <p>Utilizei HTML semântico para estruturar o conteúdo, criando seções para apresentação, habilidades e contato. Com CSS, explorei propriedades básicas como cores, fontes, margens e padding para estilizar a página.</p>
-                    <p>Apesar de simples, este projeto foi fundamental para entender como a web funciona e como os diferentes elementos se relacionam na construção de uma página. Foi também minha primeira experiência com hospedagem de um site no GitHub Pages.</p>
-                    <div class="bg-light p-5 text-center my-3">
-                        <i class="bi bi-file-earmark-code" style="font-size: 3rem;"></i>
-                        <p class="mt-2">Visualização conceitual do projeto</p>
-                    </div>
+                    <img src="https://placehold.co/600x300/pink/white?text=Projeto+Identidade+Visual" alt="Identidade Visual" class="img-fluid rounded mb-3">
+                    <p>Desenvolvimento completo da identidade visual para a marca "Natureza Pura", especializada em cosméticos naturais e orgânicos.</p>
+                    <p>O projeto incluiu:</p>
+                    <ul>
+                        <li>Criação do logotipo e variações</li>
+                        <li>Definição da paleta de cores (tons terrosos e verdes suaves)</li>
+                        <li>Tipografia personalizada</li>
+                        <li>Diretrizes de aplicação em diferentes mídias</li>
+                        <li>Design de embalagens</li>
+                    </ul>
+                    <p>O resultado foi uma identidade visual coerente que transmite os valores da marca: naturalidade, sustentabilidade e cuidado.</p>
                 </div>
                 <div class="modal-footer">
-                    <a href="#" class="btn btn-primary">Ver projeto ao vivo</a>
-                    <a href="#" class="btn btn-outline-secondary">Ver código do projeto</a>
+                    <button type="button" class="btn modal-btn" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn modal-btn-outline">
+                        <i class="bi bi-eye-fill me-2"></i>Ver projeto completo
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal 2 -->
-    <div class="modal" id="modal2" tabindex="-1">
-        <div class="modal-dialog">
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Calculadora Interativa</h5>
+                    <h5 class="modal-title"><i class="bi bi-phone-fill me-2"></i>App Mobile</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
-                    <p>A calculadora interativa foi meu primeiro projeto utilizando JavaScript. Ela é capaz de realizar as quatro operações matemáticas básicas: adição, subtração, multiplicação e divisão.</p>
-                    <p>O desenvolvimento deste projeto me ensinou conceitos importantes como:</p>
+                    <img src="https://placehold.co/600x300/pink/white?text=Projeto+App+Mobile" alt="App Mobile" class="img-fluid rounded mb-3">
+                    <p>Design de interface para o aplicativo "Organiza+", uma ferramenta de produtividade e organização pessoal.</p>
+                    <p>Principais características:</p>
                     <ul>
-                        <li>Manipulação do DOM para capturar eventos de clique</li>
-                        <li>Uso de funções para organizar o código</li>
-                        <li>Lógica de programação para realizar os cálculos</li>
-                        <li>Validação de entrada para evitar erros</li>
+                        <li>Interface limpa e intuitiva</li>
+                        <li>Sistema de cores acessível</li>
+                        <li>Fluxo de usuário otimizado</li>
+                        <li>Componentes reutilizáveis</li>
+                        <li>Animações sutis para melhor experiência</li>
                     </ul>
-                    <p>A interface foi construída com HTML e CSS, enquanto toda a funcionalidade foi implementada com JavaScript puro, sem o uso de bibliotecas externas.</p>
-                    <div class="bg-light p-5 text-center my-3">
-                        <i class="bi bi-calculator" style="font-size: 3rem;"></i>
-                        <p class="mt-2">Visualização conceitual do projeto</p>
-                    </div>
+                    <p>O desafio foi criar uma interface que fosse ao mesmo tempo funcional e visualmente agradável, reduzindo a complexidade das ferramentas de produtividade sem perder funcionalidades.</p>
                 </div>
                 <div class="modal-footer">
-                    <a href="#" class="btn btn-primary">Ver projeto ao vivo</a>
-                    <a href="#" class="btn btn-outline-secondary">Ver código do projeto</a>
+                    <button type="button" class="btn modal-btn" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn modal-btn-outline">
+                        <i class="bi bi-eye-fill me-2"></i>Ver protótipo
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal 3 -->
-    <div class="modal" id="modal3" tabindex="-1">
-        <div class="modal-dialog">
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Blog de Tecnologia</h5>
+                    <h5 class="modal-title"><i class="bi bi-shop-window me-2"></i>Landing Page</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Este projeto de blog foi desenvolvido para praticar o uso do framework Bootstrap e conceitos de design responsivo. O blog contém artigos sobre tecnologia e programação, organizados em um layout limpo e fácil de navegar.</p>
-                    <p>Principais características implementadas:</p>
+                    <img src="https://placehold.co/600x300/pink/white?text=Projeto+Landing+Page" alt="Landing Page" class="img-fluid rounded mb-3">
+                    <p>Landing page desenvolvida para a loja de artesanato "Feito à Mão", especializada em produtos artesanais de pequenos produtores.</p>
+                    <p>Destaques do projeto:</p>
                     <ul>
-                        <li>Layout responsivo que se adapta a diferentes tamanhos de tela</li>
-                        <li>Barra de navegação com menu dropdown</li>
-                        <li>Sistema de grade para organizar os artigos</li>
-                        <li>Cartões para exibir resumos dos posts</li>
-                        <li>Formulário de contato funcional</li>
+                        <li>Design responsivo (mobile-first)</li>
+                        <li>Galeria de produtos interativa</li>
+                        <li>Formulário de contato integrado</li>
+                        <li>Seção de histórias dos artesãos</li>
+                        <li>Otimização para SEO</li>
                     </ul>
-                    <p>Através deste projeto, pude aprender sobre os componentes do Bootstrap e como utilizá-los para acelerar o desenvolvimento do front-end sem perder a qualidade do design.</p>
-                    <div class="bg-light p-5 text-center my-3">
-                        <i class="bi bi-journal-text" style="font-size: 3rem;"></i>
-                        <p class="mt-2">Visualização conceitual do projeto</p>
-                    </div>
+                    <p>A página foi desenvolvida com foco em conversão, destacando a qualidade e singularidade dos produtos artesanais, resultando em um aumento de 40% nas vendas online.</p>
                 </div>
                 <div class="modal-footer">
-                    <a href="#" class="btn btn-primary">Ver projeto ao vivo</a>
-                    <a href="#" class="btn btn-outline-secondary">Ver código do projeto</a>
+                    <button type="button" class="btn modal-btn" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn modal-btn-outline">
+                        <i class="bi bi-eye-fill me-2"></i>Visitar site
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="container py-5">
-        <p class="text-center">© Copyright 2024. Produzido por Davi Sovinski</p>
+    <footer class="container py-4 text-center">
+        <p class="m-0 footer-text">© 2024 Kamila Fronstak Andolhe. Todos os direitos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
